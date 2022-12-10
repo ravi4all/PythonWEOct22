@@ -1,0 +1,37 @@
+Data Types in Python
+--------------------------------------------
+
+Operators
+- Arithmetic Operators
+  +, -, /, *, //, %, **
+- Assignment Operators
+  =, +=, -=, /=, *=, %=
+- Comparison Operators
+  >, <, ==, !=, >=, <=
+- Logical Operators
+  and, or, not
+- Membership Operator
+  in, not in
+- Identity Operators
+  is, is not
+- Bitwise Operator
+  &, |, ^
+
+
+If Else
+
+
+Write a program to check whether a number is negative, positive or zero.
+Write a program to check whether a number is divisible by 5 and 11 or not.
+Write a program to check whether a number is even or odd.
+Write a program to check whether a year is leap year or not.
+
+
+
+
+
+
+
+
+
+
