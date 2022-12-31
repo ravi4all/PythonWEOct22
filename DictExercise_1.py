@@ -10,11 +10,30 @@ print("Name :",emp_name)
 print("Dept :",data["dept"][index])
 print("Salary :",data["salary"][index])
 
+# sum = 0
+# for i in range(len(data["names"])):
+#     sum += data["salary"][i]
+#
+# print("Total Salary...",sum)
+
+# Total salary of IT Department
+# sum = 0
+# for i in range(len(data["names"])):
+#     if data["dept"][i] == "IT":
+#         sum += data["salary"][i]
+#
+# print("Total Salary...",sum)
+
+# Average Salary of HR Department
+count = 0
 sum = 0
 for i in range(len(data["names"])):
-    sum += data["salary"][i]
+    if data["dept"][i] == "HR":
+        sum += data["salary"][i]
+        count += 1
 
-print("Total Salary...",sum)
+avg_sal = sum / count
+print("Average Salary of HR {}".format(avg_sal))
 
 # 1. Find out total salary of IT Department
 # 2. Find out avg salary of HR Department

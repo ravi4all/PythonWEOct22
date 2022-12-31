@@ -22,7 +22,11 @@ toSearch = toSearch.lower()
 searchResults = []
 
 for i in range(len(products)):
-    if products[i]["p_name"].lower() == toSearch:
+    condition_1 = toSearch in products[i]["p_name"].lower()
+    condition_2 = toSearch in products[i]["brand"].lower()
+    condition_3 = toSearch in products[i]["Category"].lower()
+    if condition_1 or condition_2 or condition_3:
         print("Name :",products[i]["p_name"])
         print("Category :",products[i]["Category"])
         print("Price :",products[i]["price"])
+        searchResults.append(products[i])
